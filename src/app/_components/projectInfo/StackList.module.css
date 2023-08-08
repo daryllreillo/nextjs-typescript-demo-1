@@ -1,0 +1,9 @@
+.icon {
+  margin: 0.5rem 0.5rem 0 0;
+  font-size: 1.4rem;
+}
+
+.stackText {
+  position: relative;
+  top: -5px;
+}

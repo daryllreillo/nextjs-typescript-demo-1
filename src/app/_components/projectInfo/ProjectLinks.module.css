@@ -1,0 +1,17 @@
+.projectLinks {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.myGithubLink {
+  margin: 0 1px 0 3px;
+}
+
+.miniLogo {
+  margin: 0 0 0 3px;
+}
+
+.stackTextBottom {
+  position: relative;
+  top: -2px;
+}

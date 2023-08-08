@@ -1,0 +1,93 @@
+.todoList {
+  margin-top: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.todoList ul {
+  width: 100%;
+  transition: all 300ms linear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 1s linear;
+}
+
+.listItemEntering {
+  animation-name: fadeIn;
+  animation-duration: 300ms;
+  z-index: 1;
+}
+
+.listItemEntered {
+  opacity: 1;
+}
+
+.listItemExiting {
+  animation-name: fadeOut;
+  animation-duration: 300ms;
+  z-index: 1;
+}
+
+.listItemExited {
+  opacity: 0;
+}
+
+/* .noitemsContainer {
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+.noitemsNotice {
+  text-align: center;
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+.noticeEntering {
+  animation-name: fadeIn;
+  animation-duration: 300ms;
+  height: 0;
+  z-index: 0;
+}
+
+.noticeEntered {
+  opacity: 1;
+  height: fit-content;
+}
+
+.noticeExiting {
+  opacity: 0;
+}
+
+.noticeExited {
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}

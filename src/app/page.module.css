@@ -1,0 +1,45 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  font-weight: normal;
+}
+
+.main h1 {
+  margin: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.main h2 {
+  text-align: center;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.main ul {
+  list-style: none inside;
+  text-indent: calc(50% - 6rem);
+}
+
+.main section {
+  margin: 1rem 0 0 0;
+}
+
+.projectAppSection {
+  width: 40vw;
+  min-height: 500px;
+  min-width: 420px;
+}
+
+.projectInfoSection {
+  margin-top: 5rem;
+}
+
+@media (max-width: 1500px) {
+  .main ul {
+    text-indent: calc(50% - 6rem);
+  }
+}
