@@ -9,3 +9,4 @@ Tech stack utilized:
 - CSS Modules
 - React Transition Group
 - Node.js
+- MongoDB
